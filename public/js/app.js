@@ -14,9 +14,9 @@ weatherForm.addEventListener('submit', (e)=>{
             const resultDiv = document.querySelector('.result')
             resultDiv.innerHTML = `<ul>
                                         <li><b>Location</b>: ${data.location}</li>
-                                        <li><b>Temperature</b>: ${data.temperature}</li>
-                                        <li><b>Visibility</b>: ${data.visibility}</li>
-                                        <li><b>Humidity</b>: ${data.humidity}</li>
+                                        <li><b>Temperature</b>: ${data.Temperature}</li>
+                                        <li><b>Visibility</b>: ${data.Visibility}</li>
+                                        <li><b>Humidity</b>: ${data.Humidity}</li>
                                         <li><b>Forecast</b>: ${data.forecast}</li>
                                     </ul>`
         }

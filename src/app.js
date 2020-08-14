@@ -7,6 +7,8 @@ const forcast = require('../src/utils/forcast');
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 //=============================define paths for express config
 const publicDirPath = path.join(__dirname,'../public')
 // customizing the views directory
@@ -93,6 +95,8 @@ app.get('*', (req, res)=>{
     res.render('404', {errorMessage: "Page Not Found", title: 404, name: 'Prabhash'})
 })
 
-app.listen(3000, ()=>{
-    console.log("server running at port 3000")
+
+
+app.listen(port, ()=>{
+    console.log("server running on port " + port)
 })
